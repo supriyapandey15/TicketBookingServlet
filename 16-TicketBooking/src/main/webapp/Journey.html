@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome</title>
+</head>
+<body>
+	<form action="fareCalculator" method="post">
+		<div style="width: 50%; margin: 0 auto;">
+			<h2>Welcome</h2>
+			<div style="margin-bottom: 20px;">
+				<label for="from" style="display: block; font-weight: bold;">From:</label>
+				<select id="from" name="from"
+					style="width: 100%; padding: 10px; border: 1px solid gray;">
+					<option value="stations">Station From</option>
+					<option value="Churchgate">Churchgate</option>
+					<option value="Andheri">Andheri</option>
+					<option value="Dadar">Dadar</option>
+
+				</select>
+			</div>
+			<div style="margin-bottom: 20px;">
+				<label for="to" style="display: block; font-weight: bold;">To:</label>
+				<select id="to" name="to"
+					style="width: 100%; padding: 10px; border: 1px solid gray;">
+					<option value="stations">Station To</option>
+					<option value="Churchgate">Churchgate</option>
+					<option value="Andheri">Andheri</option>
+					<option value="Dadar">Dadar</option>
+
+				</select>
+			</div>
+			<div style="margin-bottom: 20px;">
+				<label style="display: block; font-weight: bold;">Journey
+					Type:</label><br> <input type="radio" id="oneWay" name="journeyType"
+					value="oneWay"> <label for="oneWay">One Way</label><br>
+				<input type="radio" id="return" name="journeyType" value="return">
+				<label for="return">Return</label>
+			</div>
+			<div style="margin-bottom: 20px;">
+				<input type="submit" value="Calculate Fare"
+					style="background-color: green; color: whitesmoke; padding: 15px 20px; border: none; border-radius: 5px; width: 100%;">
+			</div>
+		</div>
+	</form>
+</body>
+</html>
